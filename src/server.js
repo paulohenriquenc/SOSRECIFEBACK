@@ -4,7 +4,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
@@ -20,7 +20,7 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 app.use(cors());
 
 // Rotas
-const userRoutes = require('./routes/users');
+const userRoutes = require('../src/routes/Users');
 app.use('/users', userRoutes);
 
 app.listen(PORT, () => {

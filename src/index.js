@@ -8,6 +8,7 @@ import Home from '../src/routes/home/Home';
 import About from '../src/routes/about/About';
 import Inicio from '../src/routes/inicio/Inicio';
 import Register from '../src/routes/register/Register';
+import Time from '../src/routes/time/time';
 
 //const router = createBrowserRouter([
 
@@ -48,6 +49,11 @@ const router = createBrowserRouter([
       {
         path: "Register",
         element: <Register />,
+      },
+
+      {
+        path: "Time",
+        element: <Time />,
       },
     ]
   },
